@@ -1,25 +1,22 @@
 from stats import chars_dict_to_sorted_list, get_chars_dict, get_num_words
+import sys
 
+if len(sys.argv) < 2:
+    print("Usage: python3 main.py <path_to_book>")
+    sys.exit(1)
 
-def main() -> None:
-    
-    book_path = "books/frankenstein.txt"
-    text = get_book_text(book_path)
-    num_words = get_num_words(text)
-    chars_dict = get_chars_dict(text)
-    chars_sorted_list = chars_dict_to_sorted_list(chars_dict)
-    
-    print(f"Found {num_words} total words")
-    for item in chars_sorted_list:
-        print(item)
+book_path = sys.argv[1]
+
+#the above is setting up the agruments and the book path using an import "sys"
+
 
 
 def get_book_text(path: str) -> str:
     with open(path) as f:
         return f.read()
 
+
 def print_report(get_num_words,chars_dict_to_sorted_list,get_chars_dict):
-    book_path = "books/frankenstein.txt"
     text = get_book_text(book_path)
     num_words = get_num_words(text)
     chars_dict = get_chars_dict(text)
