@@ -1,6 +1,8 @@
 from stats import chars_dict_to_sorted_list, get_chars_dict, get_num_words
 import sys
 
+print("hello")
+
 if len(sys.argv) < 2:
     print("Usage: python3 main.py <path_to_book>")
     sys.exit(1)
