@@ -24,3 +24,6 @@ def chars_dict_to_sorted_list(num_chars_dict: dict[str, int]) -> list[tuple[str,
         count = num_chars_dict[char]
         chars_list.append((char, count))
     return sorted(chars_list, reverse=True, key=sort_on)
+
+def sum(a:int, b:int) -> int:
+    return a + b
