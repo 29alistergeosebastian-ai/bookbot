@@ -6,10 +6,10 @@ BookBot is my first [Boot.dev](https://www.boot.dev) project!
 
 ## get_num_words
 
-| Input          | process                                                                                   |output                             |
-| ---------------| ----------------------------------------------------------------------------------------- |-----------------------------------|
-| text           |  1.make a dict named chars                                                                | return length of words in list    |
-|                |  2.converts to lower case                                                                 |                                   |
+| Input          | process                                                                                      |output                          |
+| ---------------| ---------------------------------------------------------------------------------------------|--------------------------------|
+| text           |  1.make a dict named chars                                                                   | return len of words in list    |
+|                |  2.converts to lower case                                                                    |                                |
 
 ## get_chars_dict
 | Input          | process                                                                                      | output                         |
@@ -30,9 +30,10 @@ BookBot is my first [Boot.dev](https://www.boot.dev) project!
 |                |  2. loop dict > convert key-value pairs to (char, count) tuples and append to list           |                                |
 |                |  3. sort chars_list in descending order using key=sort_on                                    |                                | 
 
-# main.py
-
-## main
-|input          | process                                                                                       | output                         |
-|---------------|-----------------------------------------------------------------------------------------------|--------------------------------|
-|
+flowchart TD
+    A[Call main.py] -->B{is system argument longer then 2 }
+    B -->|yes| D[carry on ]
+    B -->|no| E[return Usage: python3 main.py <path_to_book>]
+    D -->F(gets the text )
+    F -->G(bleh)
+ 
