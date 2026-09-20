@@ -30,10 +30,6 @@ BookBot is my first [Boot.dev](https://www.boot.dev) project!
 |                |  2. loop dict > convert key-value pairs to (char, count) tuples and append to list           |                                |
 |                |  3. sort chars_list in descending order using key=sort_on                                    |                                | 
 
-flowchart TD
-    A[Call main.py] -->B{is system argument longer then 2 }
-    B -->|yes| D[carry on ]
-    B -->|no| E[return Usage: python3 main.py <path_to_book>]
-    D -->F(gets the text )
-    F -->G(bleh)
+<img width="291" height="887" alt="image" src="https://github.com/user-attachments/assets/7a440512-c476-44f0-938f-ded508978603" />
+
  
